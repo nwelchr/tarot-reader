@@ -1,9 +1,5 @@
 import requireContext from "require-context.macro";
 
-declare type ImageType = {
-  default: string;
-};
-
 const imageContext = requireContext("./", false, /\.(png|jpe?g|svg)$/);
 
 const images: { [key: string]: string } = imageContext
