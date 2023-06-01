@@ -6,7 +6,6 @@ declare type ImageType = {
 
 const imageContext = requireContext("./", false, /\.(png|jpe?g|svg)$/);
 
-console.log({ imageContext });
 const images: { [key: string]: string } = imageContext
   .keys()
   .reduce((acc: any, key: string) => {
